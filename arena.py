@@ -73,6 +73,11 @@ class Arena:
             else:
                 pick the power item
         """
+        # power_tile = sorted(
+        #     list(filter(lambda item: item.location == knight.location and item.status and knight.egilable_items.find(item.name) > -1, self._items)) or [],
+        #     key=lambda item: item.priority
+        # )
+
         power_tile = sorted(
             list(filter(lambda item: item.location == knight.location and item.status, self._items)) or [],
             key=lambda item: item.priority

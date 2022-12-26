@@ -52,11 +52,14 @@ if __name__ == "__main__":
         PowerItem(name='Helmet', location=[5, 5], defence=1, priority=4)
     ]
 
+    # R_items = ["Magic Staff", "Helmet"]
+    # knights['R'].eligible_items = list(filter(lambda item: R_items.index(item.name) > -1, power_items))
+
     valid_directions = {
         'N': lambda location: [location[0]-1, location[1]],
         'S': lambda location: [location[0]+1, location[1]],
         'E': lambda location: [location[0], location[1]+1],
-        'W': lambda location: [location[0]-1, location[1]-1],
+        'W': lambda location: [location[0], location[1]-1],
     }
 
     """"

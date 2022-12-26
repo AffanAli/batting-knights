@@ -44,6 +44,7 @@ class Knight:
     location: list[int] = field(default_factory=list)
     status: KnightStatus = KnightStatus.ALIVE
     item_equipped: str = None
+    # eligible_items: list[str] = None,
     attack: float = 1
     defence: float = 1
     surprise_attack_bonus: float = 0.5
